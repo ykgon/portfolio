@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!-- updated: 2026-11-17 -->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>権太祐樹 | ポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">業務</a></li>
+            <li><a href="#personal">個人開発</a></li>
+            <li><a href="#research">研究</a></li>
+            <li><a href="#career">経歴</a></li>
+            <li><a href="#contact">連絡先</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ Hero / About ============ -->
+      <section class="hero" id="about">
+        <div class="inner hero-inner">
+          <div class="hero-main">
+            <p class="eyebrow">Portfolio</p>
+            <h1 class="hero-name">権太祐樹<span class="hero-name-en">Yuuki Gonda</span></h1>
+            <p class="hero-cv">
+              <a class="contact-link" href="./cv.pdf" target="_blank" rel="noopener noreferrer">
+                CVを開く（PDF）
+              </a>
+            </p>
+            <div class="hero-body">
+            <p>
+              筑波大学 工学システム学類を卒業し、現在は同大学院 システム情報工学研究群
+              三目研究室の修士課程に在籍しています。機械学習と従来の数値解析手法を組み合わせ、実際の物理問題（熱拡散、流体）を超高速に解き、シミュレーションにかかる時間を短縮する研究に取り組んでいます。
+            </p>
+            <p>
+              1年間のドイツ留学では、ドイツ人工知能研究センターDFKIで、社内文書の知識グラフを扱う機械学習モデルの実装と評価に取り組みました。SmartFactory KLで担当したのは、製造設備の状態をARで再現するデジタルツイン環境の構築です。
+            </p>
+            <p>
+              並行して、LLM等を活用して、日々の自分のタスクや研究室の業務を効率化するアプリケーション開発にも取り組んでいます。作って終わりにせず、時間や労力を確実に削減できる仕組みを作ることを心がけています。
+            </p>
+            <p>
+                課外活動として、トライアスロンやフルマラソンに熱中しており、これまで10を超える大会を完走してきました。今年中にサブ3を達成することを目標にしています。
+              </p>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img src="profile.png" alt="トライアスロンの大会でランパートを走る権太祐樹" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ Skills ============ -->
+      <section class="section section-soft" id="skills">
+        <div class="inner">
+          <h2 class="section-title">スキル</h2>
+          <div class="skill-grid">
+            <div class="skill-card">
+              <h3>プログラミング言語</h3>
+              <ul class="tags">
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>C</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>フロントエンド</h3>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>バックエンド</h3>
+              <ul class="tags">
+                <li>Node.js</li>
+                <li>SQLite</li>
+                <li>Slack API (Bolt)</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>機械学習</h3>
+              <ul class="tags">
+                <li>PyTorch</li>
+                <li>PyKEEN</li>
+                <li>TensorFlow</li>
+                <li>RLlib</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>LLM・AIエージェント</h3>
+              <ul class="tags">
+                <li>Anthropic API</li>
+                <li>OpenAI API</li>
+                <li>MCP</li>
+                <li>n8n</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>インフラ・開発環境</h3>
+              <ul class="tags">
+                <li>Docker</li>
+                <li>Git</li>
+                <li>GPUクラスタ</li>
+                <li>GCP</li>
+                <li>Cloudflare</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 業務で作ったもの ============ -->
+      <section class="section" id="work">
+        <div class="inner">
+          <h2 class="section-title">業務で作ったもの</h2>
+
+          <article class="project">
+            <h3 class="project-title">研究室の社内wikiを自然文で検索して答えるSlack Bot</h3>
+            <p class="affiliation">
+              筑波大学 システム情報系 三目研究室（リサーチアシスタント）<span class="sep">／</span>2024年4月 – 現在
+            </p>
+            <p>
+              研究室のwikiにはMTGの議事録や、コード開発に必要なライブラリに関する知見、事務手続きに関する情報が溜まっているが、検索性が低く、自分が必要な記事に到達するのに長いと5分以上かかるという課題があった。
+            </p>
+            <p>
+              この課題に対し、Slack経由で自然言語の検索クエリを投げ、LLMを用いてwikiの記事を検索させて、根拠付きで知りたい情報を回答させる検索Botを作成し、情報検索にかかる時間を短縮した。
+            </p>
+            <p>
+              特に気を配ったのは、社内文書を社外のLLMへ渡す構成になる点である。当初は各メンバーに検索ツールを配る案を検討していたが、一人ひとりがAPIキーを持つと、1本の漏洩で全記事が外部から読めてしまうため取りやめ、Bot1つに集約した。Botが使う権限は読み取り専用に限定し、認証情報はBotの実行主体だけが読める場所へ隔離している。あわせて、背景を知らないSlack管理者でも設定から停止まで行えるよう、手順書を用意した。
+            </p>
+            <figure class="figure">
+              <a href="architecture-slack-bot.png" target="_blank" rel="noopener">
+                <img
+                  src="architecture-slack-bot.png"
+                  alt="Slack Botの処理の流れ。研究室メンバーの依頼がSlackを経由してBotへ届き、LLMがwiki検索と本文取得のツールを呼び出し、回答と参照パスをスレッドへ返すまでのシーケンス図"
+                  loading="lazy"
+                />
+              </a>
+              <figcaption>質問から回答までの処理の流れ（クリックで拡大）</figcaption>
+            </figure>
+            <ul class="tags tags-used">
+              <li>Node.js</li>
+              <li>Anthropic API</li>
+              <li>MCP</li>
+              <li>Slack API (Bolt)</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3 class="project-title">製造設備の状態をARで再現するデジタルツイン環境</h3>
+            <p class="affiliation">
+              SmartFactory KL e.V.（ドイツ・カイザースラウテルン）<span class="sep">／</span>2024年10月 – 12月
+            </p>
+            <p>製造ラインの設備の状態を、現場から離れた場所で把握する手段が限られているという課題があった。</p>
+            <p>
+              この課題に対し、設備の稼働データを取り込み、ARグラス越しに実機の状態をリアルタイムに重ねて表示するデジタルツイン環境を構築した。あわせて、複数のロボットアームが作業主体として同時に学習する強化学習の実験環境も整備した。
+            </p>
+            <figure class="figure figure-photo">
+              <a href="digital-twin.png" target="_blank" rel="noopener">
+                <img
+                  src="digital-twin.png"
+                  alt="製造ラインの設備に、稼働状況を示すパネルがARで重なって表示されている様子"
+                  loading="lazy"
+                />
+              </a>
+              <figcaption>ARグラス越しに設備の状態を重ねて表示する構成のイメージ（クリックで拡大）</figcaption>
+            </figure>
+            <ul class="tags tags-used">
+              <li>Python</li>
+              <li>RLlib</li>
+              <li>TensorFlow</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3 class="project-title">知識グラフとして表した社内文書データの埋め込みモデル</h3>
+            <p class="affiliation">
+              ドイツ人工知能研究センター DFKI（カイザースラウテルン）<span class="sep">／</span>2025年1月 – 7月
+            </p>
+            <p>
+              企業内に蓄積された文書や記録は、項目どうしのつながりが表現されておらず、関連する情報をたどれないという課題があった。
+            </p>
+            <p>
+              この課題に対し、社内の知識を項目とその関係からなるグラフとして整理し、その構造を数値表現へ変換する埋め込みモデルを実装した。学習を実行したうえで、既存の埋め込み手法を比較し、該当企業の知識グラフに最も適した手法を検討した。
+            </p>
+            <ul class="tags tags-used">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>PyKEEN</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ 個人開発 ============ -->
+      <section class="section section-soft" id="personal">
+        <div class="inner">
+          <h2 class="section-title">個人開発</h2>
+
+          <article class="project">
+            <h3 class="project-title">要望を聞き取るヒアリングAI</h3>
+            <p>
+              顧客の要望を聞き取る打ち合わせでは、同じ話を何度も繰り返させてしまうことや、実現できない要望をその場で受け入れてしまうことが起きるという課題があった。
+            </p>
+            <p>
+              これらの課題に対し、音声認識AIを用いて対話しながら要望を引き出し、決まった形式へ整理して出力するシステムを作成した。目的から逆算して質問を設計し、こだわりの強い項目を選ばせて深掘りする構成としている。
+            </p>
+            <p>
+              特に気を配ったのは、実現できない要望に対して、できないと明言し、理由と代替案を返す挙動である。LLMは相手に合わせて肯定しやすく、放っておくと実現不可能なものを決定事項に混ぜてしまう。これを防ぐため、押し込むような入力を並べた検証シナリオを用意し、拒否が返ることを合格条件とした。
+            </p>
+            <figure class="figure figure-video">
+              <video
+                src="hearing-demo.mp4"
+                poster="hearing-demo-poster.jpg"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              >
+                お使いのブラウザは動画の再生に対応していません。
+                <a href="hearing-demo.mp4">動画をダウンロード</a>
+              </video>
+              <figcaption>音声で対話しながら要望を聞き取る様子（78秒・音声なし）</figcaption>
+            </figure>
+            <ul class="tags tags-used">
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>OpenAI API</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3 class="project-title">自分用のタスク管理アプリ</h3>
+            <p>
+              自分がタスクにどれだけ時間をかけるかを見誤り、予定が崩れることが多いという課題があった。感覚で見積もっている限り、誤差の大きさも傾向も分からない。
+            </p>
+            <p>
+              この課題に対し、タスクにかける時間の予実管理ができるWebアプリを作成した。着手前に予定時間を宣言し、完了時に実績と比較して誤差を記録する。誤差を蓄積することで、自分の見積もり能力の改善を狙っている。日常的に自分で使っている。
+            </p>
+            <ul class="tags tags-used">
+              <li>Python</li>
+              <li>SQLite</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3 class="project-title">繰り返す作業を任せるためのAI skillsの整備</h3>
+            <p>
+              日々の作業のうち、文字起こしの誤字修正や資料の整形、外部サービスと連携させた実装の点検といった、手順の決まった作業に時間を取られていた。毎回同じ指示を書き直すため、出来上がりの品質も安定しないという課題があった。
+            </p>
+            <p>
+              この課題に対し、作業ごとの手順をskillとして文書化し、コーディングエージェントから呼び出すだけで実行できる形に整えた。現在は30件以上のskillを整備し、日常的に使っている。あわせて、実装する役と、完了条件との照合だけを行う検証する役を分け、検証役は成果物を直さず指摘だけを返す構成としている。
+            </p>
+            <ul class="tags tags-used">
+              <li>Claude Code</li>
+              <li>Codex</li>
+              <li>MCP</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3 class="project-title">手書き字形から未収録の漢字を生成するフォント生成</h3>
+            <p>
+              人名や地名に使われる漢字には、既存のフォントに収録されていないものがあり、書体を揃えて1文字だけ作るには専門の作業が必要になるという課題があった。
+            </p>
+            <p>
+              この課題に対し、少数の文字画像からその書体の特徴を学習し、未収録の文字を同じ字形で生成する仕組みを構築した。漢字を部品の組み合わせとして扱うことで、学習に使っていない文字も構成できる。モデルの構築は、公開されている既存論文のモデルを参考にして実装を進めた。
+            </p>
+            <ul class="tags tags-used">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ 研究 ============ -->
+      <section class="section" id="research">
+        <div class="inner">
+          <h2 class="section-title">研究</h2>
+
+          <article class="project">
+            <h3 class="project-title">物理シミュレーションの計算を速くする低次元モデル</h3>
+            <p class="affiliation">
+              筑波大学大学院 システム情報工学研究群 三目研究室<span class="sep">／</span>2024年4月 – 現在
+            </p>
+            <p>
+              熱の伝わり方や流体の流れを計算する物理シミュレーションは、条件を変えて何度も解こうとすると計算量が大きく、時間がかかるという課題がある。
+            </p>
+            <p>
+              この課題に対し、有限要素法で解いた結果をニューラルネットワークで少数の変数へ圧縮し、その少数の変数の上で物理法則に基づいて解き直す手法を開発している。従来の線形の圧縮では表現しにくい変化を扱うため、非線形の圧縮と領域分割を組み合わせた。
+            </p>
+            <p class="meta">学会発表：計算工学講演会　2026年6月　名古屋</p>
+            <ul class="tags tags-used">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>C</li>
+              <li>Docker</li>
+              <li>GPUクラスタ</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ 経歴 ============ -->
+      <section class="section section-soft" id="career">
+        <div class="inner">
+          <h2 class="section-title">経歴</h2>
+          <dl class="career">
+            <div class="career-row">
+              <dt>2020年4月 – 2024年3月</dt>
+              <dd>筑波大学 理工学群 工学システム学類</dd>
+            </div>
+            <div class="career-row">
+              <dt>2024年4月 – 現在</dt>
+              <dd>筑波大学大学院 理工情報生命学術院 システム情報工学研究群 修士課程</dd>
+            </div>
+            <div class="career-row">
+              <dt>2024年</dt>
+              <dd>トビタテ！留学JAPAN 新・日本代表プログラム STEAMコース 採用</dd>
+            </div>
+          </dl>
+          <p class="career-note">詳しい経歴は、冒頭のCVをご覧ください。</p>
+        </div>
+      </section>
+
+      <!-- ============ 連絡先 ============ -->
+      <section class="section" id="contact">
+        <div class="inner">
+          <div class="contact-panel">
+            <h2 class="contact-heading">
+              <svg class="contact-heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              連絡先
+            </h2>
+
+            <div class="contact-rows">
+              <div class="contact-row">
+                <span class="contact-icon contact-icon-blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364" />
+                  </svg>
+                </span>
+                <div class="contact-text">
+                  <span class="contact-label">Email</span>
+                  <a class="contact-value contact-value-link" href="mailto:gonda.yuki.ay@alumni.tsukuba.ac.jp"
+                    >gonda.yuki.ay@alumni.tsukuba.ac.jp</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-icon contact-icon-violet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                </span>
+                <div class="contact-text">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">茨城県つくば市</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-links">
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/yuki-gonda/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p class="footer-name">権太祐樹</p>
+        <p class="footer-role">Yuuki Gonda</p>
+      </div>
+    </footer>
+  </body>
+</html>
